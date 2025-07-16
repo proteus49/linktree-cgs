@@ -85,6 +85,15 @@
       }
     }
   </style>
+  <!-- SCRIPT DE SENHA -->
+  <script>
+    const senhaCorreta = "Segor25"; // <- Substitua por sua senha
+    const senhaDigitada = prompt("Digite a senha para acessar esta página:");
+    if (senhaDigitada !== senhaCorreta) {
+      alert("Senha incorreta. Acesso negado.");
+      window.location.href = "https://google.com"; // ou página pública da instituição
+    }
+  </script>
 </head>
 <body>
   <div class="container">
