@@ -85,20 +85,7 @@
       }
     }
   </style>
-   <!-- SCRIPT DE SENHA -->
-  <script>
-  // Gera a senha baseada no dia e mês atual (formato: CGSddmm)
-  const data = new Date();
-  const dia = String(data.getDate()).padStart(2, '0');
-  const mes = String(data.getMonth() + 1).padStart(2, '0'); // mês começa do 0
-  const senhaCorreta = "CGSEG" + dia + mes;
-
-  const senhaDigitada = prompt("Digite a senha para acessar a página:");
-  if (senhaDigitada !== senhaCorreta) {
-    alert("Senha incorreta. Acesso negado.");
-    window.location.href = "https://google.com";
-  }
-</script>
+   
 </head>
 <body>
   <div class="container">
