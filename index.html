@@ -7,38 +7,42 @@
   <style>
     * {
       box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
     body {
-      margin: 0;
-      padding: 0;
       background-color: #1e222a;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: #ffffff;
       display: flex;
       justify-content: center;
-      align-items: flex-start;
-      min-height: 100vh;
+      align-items: center;
       padding: 40px 20px;
+      min-height: 100vh;
     }
 
     .container {
       width: 100%;
       max-width: 500px;
       text-align: center;
+      background-color: #252a34;
+      padding: 30px 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.4);
     }
 
     .logo {
       width: 200px;
       height: 200px;
       object-fit: contain;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
     }
 
     h1 {
-      font-size: 22px;
+      font-size: 20px;
       margin-bottom: 30px;
-      color: #c0c0c0;
+      color: #dcdcdc;
       text-transform: uppercase;
       letter-spacing: 1px;
     }
@@ -49,14 +53,14 @@
       justify-content: center;
       background-color: #2e3a59;
       color: #ffffff;
-      padding: 15px 20px;
+      padding: 14px 18px;
       margin: 12px 0;
       border-radius: 10px;
       text-decoration: none;
       font-size: 16px;
       font-weight: 500;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-      transition: background 0.3s ease, transform 0.2s ease;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     }
 
     .button:hover {
@@ -69,31 +73,37 @@
     }
 
     footer {
-      margin-top: 40px;
+      margin-top: 30px;
       font-size: 12px;
-      color: #888;
+      color: #aaa;
     }
 
     @media (max-width: 500px) {
-      .button {
-        font-size: 15px;
-        padding: 14px 16px;
+      .logo {
+        width: 150px;
+        height: 150px;
       }
 
       h1 {
-        font-size: 20px;
+        font-size: 18px;
+      }
+
+      .button {
+        font-size: 15px;
+        padding: 13px 16px;
       }
     }
   </style>
-   
 </head>
 <body>
   <div class="container">
-    <!-- IMAGEM DO CABEÇALHO -->
-   <img src="https://github.com/proteus49/linktree-cgs/blob/main/logo.png?raw=true" alt="Logo" class="logo">
+    <!-- LOGO EM 200x200 -->
+    <img src="https://github.com/proteus49/linktree-cgs/blob/main/logo.png?raw=true" alt="Logo" class="logo">
 
-    <h1>Links de Serviço</h1>
+    <!-- TÍTULO -->
+    <h1>Coordenação-Geral de Segurança</h1>
 
+    <!-- LINKS -->
     <a class="button" href="https://docs.google.com/spreadsheets/d/1z60NZBuIwSgdn3HJUzZ9AfpXmGez4W3XyNfQSKblurc/edit?usp=drivesdk" target="_blank">
       📅 <span>Agenda do MJSP</span>
     </a>
@@ -106,6 +116,7 @@
       🔫 <span>Controle de Pessoas Armadas</span>
     </a>
 
+    <!-- RODAPÉ -->
     <footer>© Coordenação-Geral de Segurança</footer>
   </div>
 </body>
